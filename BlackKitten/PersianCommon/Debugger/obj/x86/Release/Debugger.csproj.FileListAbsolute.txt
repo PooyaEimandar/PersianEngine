@@ -1,0 +1,8 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\Debugger\bin\x86\Release\BaziPardaz.Persian.Debugger.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\Debugger\bin\x86\Release\BaziPardaz.Persian.Debugger.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\Debugger\bin\x86\Release\BaziPardaz.Persian.Base.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\Debugger\bin\x86\Release\BaziPardaz.Persian.Base.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\Debugger\obj\x86\Release\Debugger.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\Debugger\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\Debugger\obj\x86\Release\BaziPardaz.Persian.Debugger.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\Debugger\obj\x86\Release\BaziPardaz.Persian.Debugger.pdb

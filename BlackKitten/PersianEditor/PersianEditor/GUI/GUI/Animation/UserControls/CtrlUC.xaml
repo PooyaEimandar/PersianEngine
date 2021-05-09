@@ -1,0 +1,62 @@
+﻿<UserControl 
+    x:Class="PersianEditor.UserControls.CtrlUC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    mc:Ignorable="d" 
+    d:DesignHeight="100" d:DesignWidth="100">
+    
+    <UserControl.Resources>
+        <Style x:Key="BorderStyle">
+            <Setter Property="Control.Width" Value="15"></Setter>
+            <Setter Property="Border.Height" Value="15"></Setter>
+            <Setter Property="Border.CornerRadius" Value="5"></Setter>
+            <Setter Property="Border.BorderThickness" Value="0"></Setter>
+            <Setter Property="Control.Opacity" Value="1"></Setter>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Border x:Name="Left"
+            Background="Cyan"
+            VerticalAlignment ="Center"
+            HorizontalAlignment ="Left"
+            Style="{StaticResource BorderStyle}"
+            MouseLeftButtonDown="OnMouseLeftButtonDown">
+            <Border.Effect>
+                <BlurEffect Radius="15"></BlurEffect>
+            </Border.Effect>
+        </Border>
+        <Border x:Name="Right"
+            Background="Cyan"
+            VerticalAlignment ="Center"
+            HorizontalAlignment ="Right"
+            Style="{StaticResource BorderStyle}"
+            MouseLeftButtonDown="OnMouseLeftButtonDown">
+            <Border.Effect>
+                <BlurEffect Radius="15"></BlurEffect>
+            </Border.Effect>
+        </Border>
+        <Border x:Name="Top"
+            Background="Cyan"
+            VerticalAlignment ="Top"
+            HorizontalAlignment ="Center"
+            Style="{StaticResource BorderStyle}"
+            MouseLeftButtonDown="OnMouseLeftButtonDown">
+            <Border.Effect>
+                <BlurEffect Radius="15"></BlurEffect>
+            </Border.Effect>
+        </Border>
+        <Border x:Name="Down"
+           Background="Cyan"
+           VerticalAlignment ="Bottom"
+           HorizontalAlignment ="Center"
+           Style="{StaticResource BorderStyle}"
+           MouseLeftButtonDown="OnMouseLeftButtonDown">
+           <Border.Effect>
+                <BlurEffect Radius="15"></BlurEffect>
+           </Border.Effect>
+        </Border>
+    </Grid>
+</UserControl>

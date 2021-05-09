@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7C6F1625-83D6-4EB4-8F68-052760AEDC53}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>LightPrePassContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\PrePassRendering\ClrGBuffer.fx">
+      <Name>ClrGBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\PrePassRendering\Lights.fx">
+      <Name>Lights</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\Base\VertexPositionColor3.fx">
+      <Name>VertexPositionColor3</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Shaders\Base\VertexPositionColor4.fx">
+      <Name>VertexPositionColor4</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Textures\Utilities\Random.tga">
+      <Name>Random</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\PrePassRendering\ReadCompactDepth.fx">
+      <Name>ReadCompactDepth</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Models\Skydome.fbx">
+      <Name>Skydome</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Models\Base\Cone.fbx">
+      <Name>Cone</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Models\Base\Sphere.fbx">
+      <Name>Sphere</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Models\Base\Torus.x">
+      <Name>Torus</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Fonts\Title.spritefont">
+      <Name>Title</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Fonts\Regular.spritefont">
+      <Name>Regular</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Fonts\Times14.spritefont">
+      <Name>Times14</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <None Include="EditorBrowser\Shaders\DeferredRendering\Shared.fxh">
+      <Name>Shared</Name>
+    </None>
+    <None Include="EditorBrowser\Shaders\DeferredRendering\Lights\Buffers.fxh">
+      <Name>Buffers</Name>
+    </None>
+    <None Include="EditorBrowser\Shaders\AntiAliasing\Fxaa3_11.fxh">
+      <Name>Fxaa3_11</Name>
+    </None>
+    <None Include="EditorBrowser\Shaders\Environments\Camera.fxh">
+      <Name>Camera</Name>
+    </None>
+    <None Include="EditorBrowser\Shaders\Environments\Lighting.fxh">
+      <Name>Lighting</Name>
+    </None>
+    <None Include="EditorBrowser\Textures\Environments\Explosion.png">
+      <Name>Explosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_PremultiplyAlpha>False</ProcessorParameters_PremultiplyAlpha>
+      <ProcessorParameters_GenerateMipmaps>True</ProcessorParameters_GenerateMipmaps>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="EditorBrowser\Settings\Particles\Explosion.xml">
+      <Name>Explosion</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="EditorBrowser\Settings\Particles\ExplosionSmoke.xml">
+      <Name>ExplosionSmoke</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <None Include="EditorBrowser\Textures\Environments\Fire.png">
+      <Name>Fire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_PremultiplyAlpha>False</ProcessorParameters_PremultiplyAlpha>
+      <ProcessorParameters_GenerateMipmaps>True</ProcessorParameters_GenerateMipmaps>
+      <ProcessorParameters_ColorKeyEnabled>False</ProcessorParameters_ColorKeyEnabled>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="EditorBrowser\Settings\Particles\Fire.xml">
+      <Name>Fire</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="EditorBrowser\Settings\Particles\ProjectileTrail.xml">
+      <Name>ProjectileTrail</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <None Include="EditorBrowser\Textures\Environments\Smoke.png">
+      <Name>Smoke</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_PremultiplyAlpha>False</ProcessorParameters_PremultiplyAlpha>
+      <ProcessorParameters_ColorKeyEnabled>False</ProcessorParameters_ColorKeyEnabled>
+      <ProcessorParameters_GenerateMipmaps>True</ProcessorParameters_GenerateMipmaps>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="EditorBrowser\Settings\Particles\SmokePlume.xml">
+      <Name>SmokePlume</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\Environments\ParticleEffect.fx">
+      <Name>ParticleEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\Environments\Skydome.fx">
+      <Name>Skydome</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Textures\Environments\BlueSkyAmbient.dds">
+      <Name>BlueSkyAmbient</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_PremultiplyAlpha>False</ProcessorParameters_PremultiplyAlpha>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\PrePassRendering\DownSampleDepth.fx">
+      <Name>DownSampleDepth</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\Environments\Billboard.fx">
+      <Name>Billboard</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <None Include="EditorBrowser\Shaders\PrePassRendering\Includes\BaseLight.fxh">
+      <Name>BaseLight</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </None>
+    <None Include="EditorBrowser\Shaders\PrePassRendering\Includes\Base.fxh">
+      <Name>Base</Name>
+    </None>
+    <Compile Include="EditorBrowser\Shaders\PrePassRendering\MaterialFX.fx">
+      <Name>MaterialFX</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <ProcessorParameters_Defines>ENVIRONMENT_MAP%3b</ProcessorParameters_Defines>
+    </Compile>
+    <None Include="EditorBrowser\Textures\Default_EMISSIVE.jpg">
+      <Name>Default_EMISSIVE</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Utilities\Cursors\X.png">
+      <Name>X</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EditorBrowser\Textures\Default_EnvMap.dds">
+      <Name>Default_EnvMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="EditorBrowser\Textures\Default__EMISSIVE.tga">
+      <Name>Default__EMISSIVE</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="EditorBrowser\Textures\Utilities\lightTexture.tga">
+      <Name>lightTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Utilities\Times14.spritefont">
+      <Name>Times14</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PersianCommon\PersianSettings\PersianSettings.csproj">
+      <Project>{4D510A31-7F24-4FF0-864A-6BBF8CAFD3F9}</Project>
+      <Name>PersianSettings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PersianCommon\SkinnedMeshRuntime\SkinnedMeshRuntime.csproj">
+      <Project>{A9B13B7A-E3EE-41C0-AB6E-DD3E31288D90}</Project>
+      <Name>SkinnedMeshRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersianPipelines\PersianPipelines.csproj">
+      <Project>{aad0c899-5c06-458f-8392-9e364d399e0c}</Project>
+      <Name>PersianPipelines</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EditorBrowser\Models\Utilities\" />
+    <Folder Include="EditorBrowser\Textures\DiffuseMaps\" />
+    <Folder Include="EditorBrowser\Textures\Environments\Sky\" />
+    <Folder Include="EditorBrowser\Textures\GlowMaps\" />
+    <Folder Include="EditorBrowser\Textures\NormalMaps\" />
+    <Folder Include="EditorBrowser\Textures\SpecularMaps\" />
+    <Folder Include="EditorBrowser\Videos\Utilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Settings\Particles\VehicleFire.xml">
+      <Name>VehicleFire</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\PostProcessing\GodRay.fx">
+      <Name>GodRay</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <ProcessorParameters_Defines>FILMIC_FAST_CORRECTION%3b</ProcessorParameters_Defines>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\AntiAliasing\FXAA.fx">
+      <Name>FXAA</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EditorBrowser\Shaders\PrePassRendering\ReconstructPS.fxh">
+      <Name>ReconstructPS</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Textures\Utilities\Loading\Hat_Off.png">
+      <Name>Hat_Off</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Textures\Utilities\Loading\Hat_On.png">
+      <Name>Hat_On</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Settings\Screens.xml">
+      <Name>Screens</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Videos\BaziPardaz.wmv">
+      <Name>BaziPardaz</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\Utilities\DepthWriter.fx">
+      <Name>DepthWriter</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\DeferredRendering\ClrGBufferFX.fx">
+      <Name>ClrGBufferFX</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Shaders\DeferredRendering\FinalFX.fx">
+      <Name>FinalFX</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Shaders\DeferredRendering\GBufferFX.fx">
+      <Name>GBufferFX</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <ProcessorParameters_Defines>SKINNED%3b</ProcessorParameters_Defines>
+      <ProcessorParameters_DebugMode>Optimize</ProcessorParameters_DebugMode>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\DeferredRendering\Lights\DirectionalLight.fx">
+      <Name>DirectionalLight</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Textures\Environments\Light\SpotCookie.dds">
+      <Name>SpotCookie</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Textures\Environments\Light\SquareCookie.dds">
+      <Name>SquareCookie</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\DepthBufferFX.fx">
+      <Name>DepthBufferFX</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\PostProcessing\Toon.fx">
+      <Name>Toon</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Textures\Utilities\ToonMap.bmp">
+      <Name>ToonMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\PostProcessing\Bloom\BloomCombine.fx">
+      <Name>BloomCombine</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Shaders\PostProcessing\Bloom\BloomExtract.fx">
+      <Name>BloomExtract</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Shaders\PostProcessing\GaussianBlur.fx">
+      <Name>GaussianBlur</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Sounds\Fire.mp3">
+      <Name>Fire</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\PostProcessing\Transition.fx">
+      <Name>Transition</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Textures\Utilities\Loading\Persian_Off.png">
+      <Name>Persian_Off</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="EditorBrowser\Textures\Utilities\Loading\Persian_On.png">
+      <Name>Persian_On</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\Environments\Weather.fx">
+      <Name>Weather</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Textures\Environments\Rain.png">
+      <Name>Rain</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Textures\Environments\Snow.png">
+      <Name>Snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Shaders\PostProcessing\RadialBlur.fx">
+      <Name>RadialBlur</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Textures\EnvironmentMaps\Tablo_1.dds">
+      <Name>Tablo_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Textures\EnvironmentMaps\7AD6AF04.dds">
+      <Name>7AD6AF04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditorBrowser\Textures\Environments\RainNew.png">
+      <Name>RainNew</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

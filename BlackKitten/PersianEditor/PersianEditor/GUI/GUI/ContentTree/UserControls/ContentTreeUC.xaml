@@ -1,0 +1,168 @@
+﻿<UserControl
+    x:Class="PersianEditor.UserControls.ContentTreeUC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:telerikQuickStart="clr-namespace:Telerik.Windows.Controls.QuickStart;assembly=Telerik.Windows.Controls"
+    Unloaded="UserControl_Unloaded">
+    
+    <UserControl.Resources>
+        <Style x:Key="treeViewStyle" 
+            TargetType="telerik:RadTreeViewItem">
+            <Setter Property="IsExpanded" Value="True"></Setter>
+        </Style>
+        <Style x:Key="BlueUp">
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Image.MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard HandoffBehavior="Compose">
+                            <Storyboard>
+                                <DoubleAnimation
+                                    Storyboard.TargetProperty="Opacity"
+                                    From="0"
+                                    To="1"
+                                    Duration="0:0:0.5">
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Image.MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard HandoffBehavior="Compose">
+                            <Storyboard>
+                                <DoubleAnimation
+                                    Storyboard.TargetProperty="Opacity"
+                                    From="1"
+                                    To="0"
+                                    Duration="0:0:0.5">
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+
+    <telerikQuickStart:HeaderedContentControl 
+		HorizontalContentAlignment="Stretch" 
+        VerticalContentAlignment="Stretch"
+        telerikQuickStart:ThemeAwareBackgroundBehavior.IsEnabled="True">
+        <telerikQuickStart:HeaderedContentControl.Header>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid
+                    Grid.Column="0">
+                    <Image
+                        Grid.Column="0"
+                        Name="ExpandAllLeaveBtn" 
+                        Width="32"
+                        Height="32"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Stretch="Fill" 
+                        Source="/PersianEditor;component/Resources/Images/Leaves/ExpandAllLeave.png"
+                        ToolTip="Expand All Nodes"
+                        MouseLeftButtonDown="Btn_MouseLeftButtonDown"
+                        Opacity="1">
+                    </Image>
+                    <Image
+                        Grid.Column="0"
+                        Name="ExpandAllEnterBtn" 
+                        Width="32"
+                        Height="32"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Stretch="Fill" 
+                        Source="/PersianEditor;component/Resources/Images/Enters/ExpandAllEnter.png"
+                        ToolTip="Expand All Nodes"
+                        MouseLeftButtonDown="Btn_MouseLeftButtonDown"
+                        Opacity="0"
+                        Style="{StaticResource ResourceKey=BlueUp}">
+                    </Image>
+                </Grid>
+                <Grid
+                    Grid.Column="1">
+                    <Image
+                        Grid.Column="1"
+                        Name="RefreshLeaveBtn" 
+                        Width="32"
+                        Height="32"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Stretch="Fill" 
+                        ToolTip="Refresh"
+                        Source="/PersianEditor;component/Resources/Images/Leaves/RefreshLeave.png"
+                        MouseLeftButtonDown="Btn_MouseLeftButtonDown"
+                        Opacity="1">
+                    </Image>
+                    <Image
+                        Grid.Column="1"
+                        Name="RefreshEnterBtn" 
+                        Width="32"
+                        Height="32"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Stretch="Fill" 
+                        ToolTip="Refresh"
+                        Source="/PersianEditor;component/Resources/Images/Enters/RefreshEnter.png"
+                        MouseLeftButtonDown="Btn_MouseLeftButtonDown"
+                        Opacity="0"
+                        Style="{StaticResource ResourceKey=BlueUp}">
+                    </Image>
+                </Grid>
+                <Grid
+                    Grid.Column="2">
+                    <Image
+                        Name="CollapseAllLeaveBtn" 
+                        Width="32"
+                        Height="32"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Stretch="Fill"
+                        ToolTip="Collapse All"
+                        Source="/PersianEditor;component/Resources/Images/Leaves/CollapseAllLeave.png"
+                        MouseLeftButtonDown="Btn_MouseLeftButtonDown"
+                        Opacity="1">
+                    </Image>
+                    <Image
+                        Name="CollapseAllEnterBtn" 
+                        Width="32"
+                        Height="32"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Stretch="Fill"
+                        ToolTip="Collapse All"
+                        Source="/PersianEditor;component/Resources/Images/Enters/CollapseAllEnter.png"
+                        MouseLeftButtonDown="Btn_MouseLeftButtonDown"
+                        Opacity="0"
+                        Style="{StaticResource ResourceKey=BlueUp}">
+                    </Image>
+                </Grid>
+            </Grid>
+        </telerikQuickStart:HeaderedContentControl.Header>
+        <Grid>
+            <telerik:RadTreeView 
+                x:Name="treeView"
+                IsSingleExpandPath="True" 
+                IsLineEnabled="True"
+				SelectionMode="Multiple" 
+                IsEditable="True" 
+                IsDragDropEnabled="True"
+                PreviewDragEnded="ContentTreeView_PreviewDragEnded"
+                Edited="ContentTreeView_Edited"
+                MouseRightButtonDown="ContentTreeView_MouseRightButtonDown">
+                <telerik:RadContextMenu.ContextMenu>
+                    <telerik:RadContextMenu x:Name="TreeContextMenu"
+                        Opened="TreeContextMenu_Opened">
+                    </telerik:RadContextMenu>
+                </telerik:RadContextMenu.ContextMenu>
+            </telerik:RadTreeView>
+        </Grid>
+    </telerikQuickStart:HeaderedContentControl>
+</UserControl>
