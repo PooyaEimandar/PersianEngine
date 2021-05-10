@@ -1,0 +1,6 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\bin\x86\Release\BaziPardaz.Persian.Parallel.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\bin\x86\Release\BaziPardaz.Persian.Parallel.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Release\ParallelThreading.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Release\BaziPardaz.Persian.Parallel.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Release\BaziPardaz.Persian.Parallel.pdb
