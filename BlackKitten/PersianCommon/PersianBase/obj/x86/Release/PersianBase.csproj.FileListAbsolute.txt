@@ -1,0 +1,6 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianBase\bin\x86\Release\BaziPardaz.Persian.Base.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianBase\bin\x86\Release\BaziPardaz.Persian.Base.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianBase\obj\x86\Release\PersianBase.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianBase\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianBase\obj\x86\Release\BaziPardaz.Persian.Base.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianBase\obj\x86\Release\BaziPardaz.Persian.Base.pdb
