@@ -1,0 +1,12 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\bin\x86\Debug\BaziPardaz.Persian.Parallel.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\bin\x86\Debug\BaziPardaz.Persian.Parallel.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Debug\BaziPardaz.Persian.Parallel.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Debug\BaziPardaz.Persian.Parallel.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Debug\ParallelThreading.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\bin\x86\Debug\BaziPardaz.Persian.Parallel.dll
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\bin\x86\Debug\BaziPardaz.Persian.Parallel.pdb
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Debug\ParallelThreading.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Debug\BaziPardaz.Persian.Parallel.dll
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianParallel\ParallelThreading\obj\x86\Debug\BaziPardaz.Persian.Parallel.pdb
