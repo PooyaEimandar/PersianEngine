@@ -1,0 +1,10 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Debug\PersianSettings.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Debug\PersianSettings.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Debug\Microsoft.Xna.Framework.Content.Pipeline.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Debug\Microsoft.Xna.Framework.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Debug\Microsoft.Xna.Framework.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Debug\Microsoft.Xna.Framework.Content.Pipeline.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Debug\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\obj\Debug\PersianSettings.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\obj\Debug\PersianSettings.pdb

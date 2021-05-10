@@ -1,0 +1,11 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Release\PersianSettings.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Release\PersianSettings.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Release\Microsoft.Xna.Framework.Content.Pipeline.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Release\Microsoft.Xna.Framework.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Release\Microsoft.Xna.Framework.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Release\Microsoft.Xna.Framework.Content.Pipeline.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\bin\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\obj\Release\PersianSettings.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\obj\Release\PersianSettings.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianSettings\obj\Release\PersianSettings.pdb
