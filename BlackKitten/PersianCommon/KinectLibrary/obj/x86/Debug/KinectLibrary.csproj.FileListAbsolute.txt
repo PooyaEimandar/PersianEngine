@@ -1,0 +1,14 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\bin\x86\Debug\BaziPardaz.Persian.KinectLibrary.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\bin\x86\Debug\BaziPardaz.Persian.KinectLibrary.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\bin\x86\Debug\Microsoft.Samples.Kinect.SwipeGestureRecognizer.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\obj\x86\Debug\BaziPardaz.Persian.KinectLibrary.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\obj\x86\Debug\BaziPardaz.Persian.KinectLibrary.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\obj\x86\Debug\KinectLibrary.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\bin\x86\Debug\BaziPardaz.Persian.KinectLibrary.dll
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\bin\x86\Debug\BaziPardaz.Persian.KinectLibrary.pdb
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\bin\x86\Debug\Microsoft.Samples.Kinect.SwipeGestureRecognizer.dll
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\obj\x86\Debug\KinectLibrary.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\obj\x86\Debug\BaziPardaz.Persian.KinectLibrary.dll
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\KinectLibrary\obj\x86\Debug\BaziPardaz.Persian.KinectLibrary.pdb
