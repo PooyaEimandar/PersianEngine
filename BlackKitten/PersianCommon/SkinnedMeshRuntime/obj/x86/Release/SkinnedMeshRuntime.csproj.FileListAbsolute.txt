@@ -1,0 +1,5 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SkinnedMeshRuntime\bin\x86\Release\SkinnedMeshRuntime.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SkinnedMeshRuntime\bin\x86\Release\SkinnedMeshRuntime.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SkinnedMeshRuntime\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SkinnedMeshRuntime\obj\x86\Release\SkinnedMeshRuntime.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SkinnedMeshRuntime\obj\x86\Release\SkinnedMeshRuntime.pdb
