@@ -1,0 +1,11 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\bin\Release\Jitter.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\bin\Release\Jitter.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\bin\Release\Microsoft.Xna.Framework.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\bin\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\bin\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\bin\Release\Microsoft.Xna.Framework.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\bin\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\bin\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\obj\Release\JitterPhysic.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\obj\Release\Jitter.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianPhysic\JitterPhysic\obj\Release\Jitter.pdb
