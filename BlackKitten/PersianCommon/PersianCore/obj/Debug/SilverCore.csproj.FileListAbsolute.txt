@@ -1,0 +1,5 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianCore\Bin\Debug\SilverCore.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianCore\Bin\Debug\SilverCore.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianCore\obj\Debug\SilverCore.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianCore\obj\Debug\SilverCore.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PersianCore\obj\Debug\SilverCore.pdb

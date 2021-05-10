@@ -1,0 +1,12 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\bin\x86\Debug\BaziPardaz.Persian.PrimitivesLib.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\bin\x86\Debug\BaziPardaz.Persian.PrimitivesLib.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Debug\BaziPardaz.Persian.PrimitivesLib.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Debug\BaziPardaz.Persian.PrimitivesLib.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Debug\PrimitivesLib.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\bin\x86\Debug\BaziPardaz.Persian.PrimitivesLib.dll
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\bin\x86\Debug\BaziPardaz.Persian.PrimitivesLib.pdb
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Debug\PrimitivesLib.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Debug\BaziPardaz.Persian.PrimitivesLib.dll
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Debug\BaziPardaz.Persian.PrimitivesLib.pdb

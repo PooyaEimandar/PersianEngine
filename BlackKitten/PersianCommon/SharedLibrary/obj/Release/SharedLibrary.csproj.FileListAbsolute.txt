@@ -1,0 +1,9 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Release\BaziPardaz.Persian.SharedLibrary.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Release\BaziPardaz.Persian.SharedLibrary.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Release\Microsoft.Xna.Framework.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Release\Microsoft.Xna.Framework.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\obj\Release\SharedLibrary.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\obj\Release\BaziPardaz.Persian.SharedLibrary.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\obj\Release\BaziPardaz.Persian.SharedLibrary.pdb

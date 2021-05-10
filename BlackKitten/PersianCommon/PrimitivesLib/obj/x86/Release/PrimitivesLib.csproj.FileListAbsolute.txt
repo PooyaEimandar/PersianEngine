@@ -1,0 +1,5 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\bin\x86\Release\BaziPardaz.Persian.PrimitivesLib.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\bin\x86\Release\BaziPardaz.Persian.PrimitivesLib.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Release\BaziPardaz.Persian.PrimitivesLib.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\PrimitivesLib\obj\x86\Release\BaziPardaz.Persian.PrimitivesLib.pdb

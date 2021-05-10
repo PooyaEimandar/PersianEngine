@@ -1,0 +1,8 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Debug\BaziPardaz.Persian.SharedLibrary.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Debug\BaziPardaz.Persian.SharedLibrary.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Debug\Microsoft.Xna.Framework.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Debug\Microsoft.Xna.Framework.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\bin\Debug\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\obj\Debug\BaziPardaz.Persian.SharedLibrary.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianCommon\SharedLibrary\obj\Debug\BaziPardaz.Persian.SharedLibrary.pdb
