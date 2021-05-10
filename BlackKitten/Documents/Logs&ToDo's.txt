@@ -1,0 +1,218 @@
+++++++++++++++++++++++++++++++++++
+|								 |
+|	  In the name of ALLAH		 |
+|								 |
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+|							     |
+|			 | + Normal          |
+|	Tasks    | # Above Normal    |
+|			 | * High            |
+|			 |:) Done			 |
+|			 |:( BUG			 |
+|                                |
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+|                                |
+|             ToDo's             |
+|                                |
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+
++ Intgratre Silverlight 5 with project
++ Facebook & Twitter app
+# insancing, if each effect can customize...all instace are list of base...if base has been delete second instace must be base...if duplicating instacing starts
+# MultiTexture for location
+# Billboards that rotate around of characters...like newspapers or any papers
+# Dirt must be create with Particles that moves...must be set with editor
+# Get Cloth to location
+# Light like texture must be added and can rotate or move
+# Check Disposing
+# We need show effect code and change it...then save and rebuild it so use Custom Effect
+# U Can simply open Effect of object...then change it and compile it with custom compiler...then save it to hard...build from hard...then delete from source from hard...then copy xnb to beside object
+# Openning animation mixer and remove tracks
+* Add effect compiler for local material
+* About window...Example page
+* Check Onchanging device setting
+* Shaebeye noor with mesh and opacity????????????
++ Javascript interpretor(JINT) or iron python for scripting
+* Create HLSL editor
+* fix godray
+* SpriteManager for showing text in one draw call
+* Move rain and snow to engine
+* Like us on facebook & twitter & about beside the lower & donate, tutorials link inside
+* Fog for night
+* PA Animation
+
+
+* Load screen of demo 1
+* Copy all animations & assets of level 1 to 7zip
+* Check all this.Dispose(false); for destructor
+
+
+/*
+	//Code for OK of Master chef
+           this.masterChef.LoadAnimationClips(@"Models\Characters\Facial\MasterFeelOK");
+            this.masterChef.AddToMixer(new MixerInfo()
+            {
+                Name = "FeelOK_Mix",
+                AnimationTracks = new List<string>() { "FeelOK", "FeelOK_Facial" },
+                AnimationTracksInverese = new List<bool>() { false, false },
+                AnimationSpeeds = new List<float>() { 0.015f, 0.015f },
+                DeltaBetweenFrames = new List<long>() { 0, 0 },//3120 
+                MixerType = 0,
+                BoneInherits = new Dictionary<int, int>() 
+                    { 
+                        { 43, 1 }, { 37, 1 }, { 44, 1 }, 
+                        { 38, 1 }, { 48, 1 }, { 47, 1 }, 
+                        { 46, 1 }, { 42, 1 }, { 40, 1 },
+                        { 39, 1 }, { 45, 1 }, { 41, 1 },
+                        { 49, 1 }, 
+                    },
+            });
+            this.chef.AnimData.UseMixer = true;
+
+			
+            this.masterChef.LoadAnimationClips(@"Models\Characters\Facial\MasterFeelBad");
+            this.masterChef.AddToMixer(new MixerInfo()
+            {
+                Name = "FeelBad_Mix",
+                AnimationTracks = new List<string>() { "FeelBad", "FeelBad_Facial" },
+                AnimationTracksInverese = new List<bool>() { false, false },
+                AnimationSpeeds = new List<float>() { 0.015f, 0.015f },
+                DeltaBetweenFrames = new List<long>() { 0, 0 },//3120 
+                MixerType = 0,
+                BoneInherits = new Dictionary<int, int>() 
+                    { 
+                        { 43, 1 }, { 37, 1 }, { 44, 1 }, 
+                        { 38, 1 }, { 48, 1 }, { 47, 1 }, 
+                        { 46, 1 }, { 42, 1 }, { 40, 1 },
+                        { 39, 1 }, { 45, 1 }, { 41, 1 },
+                        { 49, 1 }, 
+                    },
+            });
+            this.chef.AnimData.UseMixer = true;
+*/
+
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+|                                |
+|             Versions           |
+|                                |
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+:) Coordinate System and grid has been added
+:) Content Builder has been added
+:) Static & Skinned Mesh loader has been added by PipeLines
+:) Assets and folders of content can now directly control inside of engine, these assets are bind to property named ModelPath of mesh
+  so u can change directory of asset and also mesh knows the path of itself
+:) saving scene has been added...all properties of each data save with custome xml format
+:) Loading of scene also has been added
+:) Save and Loading projects has been added
+:) Changing properties of mouse from UI has been added
+:) Selecting Objects are available now
+:) Active or inactive physic on specific object
+:) +++++BUG FIXED++++++ When destructor called don not let it to dispose model because other models has been dispose...only disposing from Dispose method will valid
+:) Duplicating Model
+:) F like xsi for zooming
+:) Visibility and show all with shift+H
+:) UsageReporter has been updated
+:) Creating Project and Base Folder for Contents has been updated...by default content contains folders named "fons, texturex and shaders and modes"
+:) Saving Has been Improved, from now properties has "DoNotSave" Attribute that indicates to allow saving or not
+:) Bones can now selecting...Each Bone is bind to ribbon 's components
+:) Visual of console are customized for better debugging
+:) +++++BUG FIXED+++++ When opening or newing project...make sure CurrentSavePath are empty
+:) Log File also creating in folder named Logs in root of persian Editor Debug
+:) Animations are Bind to ribbon's components
+:) +++++BUG FIXED+++++ In Loading... Default pose and show bones must be loaded 
+:) +++++BUG FIXED+++++ For cloning make sure property can readable and writeable
+:) value of bones can now editing...such as copy values, paste them , swap thems and change position and rotation
+:) Shortcut Ctrl+S has been added
+:) Multiple selection now available
+:) Selected boundig sphere are draw with another color
+:) Normal Maps and other resource of editor are gather inside of editor so u can import any resource for them directly inside editor
+:) Each AnimationClip has it's own AnimationSpeed
+:) U can save ArrayItems now
+:) Shift+H and H now acts on Bones if BonesVisibility equals true
+:) Deleting meshes has been added
+:) Bones now can swapped and can be saved for each animation
+:) Content Tree worker , now work on thread...it does not make delay on rendering
+:) An Animation Class is created for better handling...mesh class seperated to multiples classes
+:) Light & Shadow has been added to editor
+:) All types of lights has been added
+:) Camera history has been added to editor...save camera Shift + D0 ... D9 , and load camera D0 ... D9
+:) Primitives are now draw with custom effect not basicEffect
+:) Multiple animation mixers has been added, do not let mix mixedClip with another animationClip or mixedClip
+:) Save and load upgraded for any type of data and mixed generic data
+:) Editor binded to engine
+:) Physic is now adapted with engine
+:) Rotating objects with Holding Right mouse btn, Scaling with Holding Scroll, Moving with holding left mouse btn, and also rectangle selection have been added
+:) Saving and loadin weapon and camera that is attached are OK
+:) Dynamic properties has been added so you can select mesh and set it's physic type to vehicle, or weapon or anything else
+
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+|                                |
+|    VERSION 0.0.4.1 RELEASED    |
+|                                |
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+
+:) +++++BUG FIXED+++++ Physic Type error fixed
+:) Support runtime loading for DDS
+:) TexLOD has been added for dds 
+:) Light has been added to Saving & Loading 
+:) Animated camera has been added
+:) CutScene has been added, now we can create a cut scene from animated models and animated camera 
+
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+|                                |
+|    VERSION 0.0.4.2 RELEASED    |
+|                                |
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+
+:) Save & Load CutScenes has been added
+:) Explorer window has been added
+:) GodRay bug fixed
+:) +++++BUG FIXED++++++ The load and import process of cut scene optimized
+:) +++++BUG FIXED++++++ Model of AnimationClip changed from long to float for better blending
+:) AnimationSpeed has been added to camera of CutScene
+:) Manage bounding box for all object via editor, there will be no need to calculate it inside engine
+:) Scene Manager has been added
+:) GraphicsDevice move to Persian.cs for better managing
+:) Each screen can manage the coresponding cutScene
+:) Animation mixer upgraded to new model { Parallel, Sequential, Sequential with loop at end}, also inverse for each animation track supported
+:) Animated camera can be play in reverse mode
+:) Saving & Loading light shaft has been supported 
+:) Sky has been added
+:) Postprocessing has been added editor
+:) Blur, Bloom, Glow, Toon have been added as postProcess items
+:) +++++BUG FIXED++++++ Loading meshes at runTime
+:) Loading screen has been optimized
+:) PCF for shadow has been added
+:) Caching primitives on gpu at the first frame after loading
+:) Transitioning between two screen has been added 
+:) +++++BUG FIXED++++++ Static physic types now changes with rotation of object
+:) +++++BUG FIXED++++++ Drag nodes now change the model path
+
+
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+|                                |
+|    VERSION 0.0.4.5 RELEASED    |
+|                                |
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
