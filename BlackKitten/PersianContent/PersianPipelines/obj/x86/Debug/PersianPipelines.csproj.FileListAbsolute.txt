@@ -1,0 +1,14 @@
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianContent\PersianPipelines\obj\x86\Debug\PersianPipelines.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianContent\PersianPipelines\bin\x86\Debug\PersianPipelines.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianContent\PersianPipelines\bin\x86\Debug\PersianPipelines.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianContent\PersianPipelines\bin\x86\Debug\SkinnedMeshRuntime.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianContent\PersianPipelines\bin\x86\Debug\SkinnedMeshRuntime.pdb
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianContent\PersianPipelines\obj\x86\Debug\PersianPipelines.dll
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianContent\PersianPipelines\obj\x86\Debug\PersianPipelines.pdb
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianContent\PersianPipelines\bin\x86\Debug\PersianPipelines.dll
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianContent\PersianPipelines\bin\x86\Debug\PersianPipelines.pdb
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianContent\PersianPipelines\bin\x86\Debug\SkinnedMeshRuntime.dll
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianContent\PersianPipelines\bin\x86\Debug\SkinnedMeshRuntime.pdb
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianContent\PersianPipelines\obj\x86\Debug\PersianPipelines.csprojResolveAssemblyReference.cache
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianContent\PersianPipelines\obj\x86\Debug\PersianPipelines.dll
+C:\Users\P.Eimandar\Desktop\a\BlackKitten\BlackKitten\PersianContent\PersianPipelines\obj\x86\Debug\PersianPipelines.pdb
