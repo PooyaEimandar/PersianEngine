@@ -1,0 +1,20 @@
+﻿PersianEditor
+
+
+winexe
+C#
+.cs
+C:\Users\P.Eimandar\Desktop\Projects\BaziPardaz\BlackKitten\BlackKitten\PersianEditor\PersianEditor\obj\x86\Release\
+PersianEditor
+none
+false
+TRACE;WINDOWS
+
+23-846703505
+3608299854
+3642633390
+321875645720
+GUI\GUI\Animation\UserControls\AnimationMixerEditorUC.xaml;GUI\GUI\Animation\UserControls\CtrlUC.xaml;GUI\GUI\Animation\UserControls\GamePadSyncerUC.xaml;GUI\GUI\Animation\Windows\AnimationMixerEditorWin.xaml;GUI\GUI\Animation\Windows\GamePadSyncerWin.xaml;GUI\GUI\Bar\NotifyListUC.xaml;GUI\GUI\Build\UserControls\PlayUC.xaml;GUI\GUI\Build\Windows\PlayWin.xaml;GUI\GUI\ContentTree\UserControls\ContentTreeUC.xaml;GUI\GUI\ContentTree\UserControls\ExplorerUC.xaml;GUI\GUI\ContentTree\UserControls\TexturesManagerUC.xaml;GUI\GUI\ContentTree\UserControls\TextureViewerUC.xaml;GUI\GUI\ContentTree\Windows\TextureViewerWin.xaml;GUI\GUI\LoadingWin.xaml;GUI\GUI\Ribbon\UserControls\HeaderUC.xaml;GUI\GUI\Ribbon\UserControls\RibbonBarUC.xaml;GUI\GUI\Ribbon\UserControls\RibbonComponents\CameraSettingUC.xaml;GUI\GUI\Ribbon\UserControls\RibbonComponents\TransformUC.xaml;GUI\GUI\Ribbon\UserControls\RibbonComponents\XYZUC.xaml;GUI\GUI\ShellWin.xaml;GUI\GUI\ContentTree\Windows\ExplorerWin.xaml;GUI\GUI\_Base Inherit\MenuUC.xaml;GUI\GUI\Intro\UserControlTest.xaml;
+
+True
+
