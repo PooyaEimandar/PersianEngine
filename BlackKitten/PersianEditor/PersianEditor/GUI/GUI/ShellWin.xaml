@@ -1,0 +1,171 @@
+﻿<Window 
+    x:Class="PersianEditor.Windows.ShellWin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:Sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" 
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:telerikQuickStart="clr-namespace:Telerik.Windows.Controls.QuickStart;assembly=Telerik.Windows.Controls"
+    xmlns:UCs="clr-namespace:PersianEditor.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    AllowsTransparency="False" 
+    WindowStyle="None" 
+    WindowStartupLocation="CenterScreen"
+    WindowState="Maximized"
+    KeyDown="Window_KeyDown"
+    Unloaded="Window_Unloaded"
+    Loaded="Window_Loaded"
+    mc:Ignorable="d"
+    Background="#2d2e32"
+    d:DesignHeight="1024" 
+    d:DesignWidth="1280">
+    
+    <Window.Resources>
+        <Style x:Key="DockStyle">
+            <Setter Property="telerik:RadPane.CanFloat" Value="False"></Setter>
+            <Setter Property="telerik:RadPane.CanUserClose" Value="False"></Setter>
+            <Setter Property="telerik:RadPane.CanUserPin" Value="False"></Setter>
+            <Setter Property="telerik:RadPane.CanDockInDocumentHost" Value="False"></Setter>
+        </Style>
+    </Window.Resources>
+    
+    <Grid 
+        Name="RootLayer">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <UCs:RibbonBarUC
+            Grid.Row="0"
+            x:Name="ribbonBarUC">
+        </UCs:RibbonBarUC>
+        <Grid
+            Grid.Row="1">
+            <telerik:RadDocking
+                telerikQuickStart:ThemeAwareBackgroundBehavior.IsEnabled="True">
+                <!--Main Container-->
+                <telerik:RadDocking.DocumentHost>
+                    <telerik:RadSplitContainer>
+                        <telerik:RadPaneGroup x:Name="MainRenderDock">
+                            <telerik:RadPane
+                                Header="Render Surface" 
+                                Style="{StaticResource DockStyle}">
+                                <WindowsFormsHost x:Name="WinFormsHost"
+                                    Margin="7"
+                                    Background="#2d2e32">
+                                    <wf:Panel
+                                        x:Name="Render_Layer"
+                                        MouseClick="Render_OnMouseClick"
+                                        MouseEnter="Render_OnMouseEnter"
+                                        MouseLeave="Render_OnMouseLeave">
+                                    </wf:Panel>
+                                </WindowsFormsHost>
+                            </telerik:RadPane>
+                    </telerik:RadPaneGroup>
+                    </telerik:RadSplitContainer>
+                </telerik:RadDocking.DocumentHost>
+                <!--Right Container-->
+                <telerik:RadSplitContainer
+                    Width="250"
+                    MaxWidth="250"
+                    MinWidth="250"
+                    InitialPosition="DockedRight">
+                    <telerik:RadPaneGroup>
+                        <telerik:RadPane
+                            CanFloat="False"
+                            CanUserClose="False"
+                            CanUserPin="False"
+                            CanDockInDocumentHost="False"
+                            IsPinned="True"
+                            IsSelected="True"
+                            Title="Properties">
+                            <telerik:RadPane.Header>
+                                <UCs:HeaderUC 
+                                    TextProperty="Properties"
+                                    Foreground="Black">
+                                </UCs:HeaderUC>
+                            </telerik:RadPane.Header>
+                            <WindowsFormsHost
+                                Margin="1">
+                                <wf:PropertyGrid 
+                                    x:Name="propertyGrid"
+                                    ViewBackColor="#2d2e32"
+                                    ViewForeColor="White"
+                                    LineColor="DarkGray"
+                                    BackColor="#2d2e32">
+                                </wf:PropertyGrid>
+                            </WindowsFormsHost>
+                        </telerik:RadPane>
+                        <telerik:RadPane
+                            CanFloat="False"
+                            CanUserClose="False"
+                            CanUserPin="False"
+                            CanDockInDocumentHost="False"
+                            IsPinned="True"
+                            Title="Content of Engine">
+                            <telerik:RadPane.Header>
+                                <UCs:HeaderUC 
+                                    TextProperty="Content"
+                                    Foreground="Black">
+                                </UCs:HeaderUC>
+                            </telerik:RadPane.Header>
+                            <UCs:ContentTreeUC x:Name="EngineContentTree"
+                                contextType="EngineContext">
+                                <UCs:ContentTreeUC.SearchType>
+                                    <Sys:String>*.xnb</Sys:String>
+                                </UCs:ContentTreeUC.SearchType>
+                            </UCs:ContentTreeUC>
+                        </telerik:RadPane>
+                        <telerik:RadPane
+                            CanFloat="False"
+                            CanUserClose="False"
+                            CanUserPin="False"
+                            CanDockInDocumentHost="False"
+                            IsPinned="True"
+                            Title="Content of Editor">
+                            <telerik:RadPane.Header>
+                                <UCs:HeaderUC 
+                                    TextProperty="Textures"
+                                    Foreground="Black">
+                                </UCs:HeaderUC>
+                            </telerik:RadPane.Header>
+                            <UCs:TexturesManagerUC x:Name="TexturesManager">
+                            </UCs:TexturesManagerUC>
+                        </telerik:RadPane>
+                    </telerik:RadPaneGroup>
+                </telerik:RadSplitContainer>
+                <!--Bottom Container-->
+                <telerik:RadSplitContainer x:Name="BottomContainer" 
+                    InitialPosition="DockedBottom"
+                    MaxHeight="150"
+                    MinWidth="150"
+                    Width="150">
+                    <telerik:RadPaneGroup>
+                        <telerik:RadPane
+                            x:Name="ErrorPanel"
+                            Style="{StaticResource DockStyle}"
+                            IsPinned="False"
+                            IsSelected="True"
+                            Title="Errors">
+                            <telerik:RadPane.Header>
+                                <UCs:HeaderUC TextProperty="Errors"></UCs:HeaderUC>
+                            </telerik:RadPane.Header>
+                            <UCs:NotifyListUC x:Name="Errors"></UCs:NotifyListUC>
+                        </telerik:RadPane>
+                        <telerik:RadPane
+                            Style="{StaticResource DockStyle}"
+                            IsPinned="False"
+                            IsSelected="False"
+                            Title="Warnings">
+                            <telerik:RadPane.Header>
+                                <UCs:HeaderUC TextProperty="Warnings"></UCs:HeaderUC>
+                            </telerik:RadPane.Header>
+                            <UCs:NotifyListUC></UCs:NotifyListUC>
+                        </telerik:RadPane>
+                    </telerik:RadPaneGroup>
+                </telerik:RadSplitContainer>
+            </telerik:RadDocking>
+        </Grid>
+    </Grid>
+</Window>

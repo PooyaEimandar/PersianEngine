@@ -1,0 +1,1058 @@
+﻿<UserControl  
+    x:Class="PersianEditor.UserControls.RibbonBarUC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:UCs="clr-namespace:PersianEditor.UserControls"
+    xmlns:Comps="clr-namespace:PersianEditor.UserControls.RibbonComponents"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    mc:Ignorable="d" 
+    d:DesignHeight="190" 
+    d:DesignWidth="1400">
+
+    <UserControl.Resources>
+        <Image
+            x:Key="TranslateImage"
+            Source="/PersianEditor;component/Resources/Images/New.png">           
+        </Image>
+        <BitmapImage
+            x:Key="Logo"
+            UriSource="/PersianEditor;component/Resources/Images/PersianLogo.png">
+        </BitmapImage>
+        <BitmapImage
+            x:Key="Base"
+            UriSource="/PersianEditor;component/Resources/Images/Leaves/BaseLeave.png">
+        </BitmapImage>
+        <Style x:Key="FontBtn">
+            <Setter Property="Control.FontFamily" Value="Times New Roman"></Setter>
+            <Setter Property="Control.FontSize" Value="15"></Setter>
+            <Setter Property="Control.FontWeight" Value="Bold"></Setter>
+        </Style>
+        <Style x:Key="ThisStyle">
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="Control.Margin" Value="5,1"></Setter>
+        </Style>
+        <Style x:Key="MaskStyle">
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.Margin" Value="5,1"></Setter>
+            <Setter Property="Control.Width" Value="70"></Setter>
+            <Setter Property="telerik:RadMaskedTextBox.Mask" Value="d"></Setter>
+            <Setter Property="telerik:RadMaskedTextBox.MaskType" Value="Numeric"></Setter>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+        <telerik:RadRibbonBar 
+            x:Name="RibbonBar"
+            Title="PersianEngine"
+            ApplicationName="Editor"
+            ApplicationButtonImageSource="{StaticResource Logo}">
+            
+            <telerik:RadRibbonBar.ApplicationMenu>
+                <telerik:ApplicationMenu x:Name="AppMenu">                  
+                    <!--Application Content Menu-->
+                    <telerik:ApplicationMenu.Content>
+                        <StackPanel
+                            x:Name="AppContentMenu"
+                            Width="300">
+                            <telerik:RadGroupHeader 
+                                Content="Recent Projects">
+                            </telerik:RadGroupHeader>
+                            <telerik:RadRibbonButton 
+                                Content="1 The Land.PES" 
+                                HorizontalAlignment="Stretch">
+                            </telerik:RadRibbonButton>
+                            <telerik:RadRibbonButton 
+                                Content="2 AncientFight.PES" 
+                                HorizontalAlignment="Stretch">
+                            </telerik:RadRibbonButton>
+                            <telerik:RadRibbonButton 
+                                Content="3 Test.PES" 
+                                HorizontalAlignment="Stretch">
+                            </telerik:RadRibbonButton>
+                        </StackPanel>
+                    </telerik:ApplicationMenu.Content>
+                    <!--Application Footer Menu-->
+                    <telerik:ApplicationMenu.FooterContent>
+                        <StackPanel 
+                            Height="25" 
+                            Orientation="Horizontal">
+                            <telerik:RadButton 
+                                x:Name="Exit"
+                                Foreground="Cyan"
+                                Width="100" 
+                                Height="20" 
+                                Margin="3,0,2,0" 
+                                CornerRadius="5"
+                                Content="Exit" 
+                                Click="AppBtn_Click"
+                                Style="{StaticResource FontBtn}">
+                            </telerik:RadButton>
+                        </StackPanel>
+                    </telerik:ApplicationMenu.FooterContent>                
+                    <telerik:RadRibbonSplitButton
+                        x:Name="NewSplitBtn"
+                        Text="New"
+                        LargeImage="{StaticResource Base}">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <StackPanel 
+                                HorizontalAlignment="Stretch">
+                                <telerik:RadGroupHeader
+                                    Content="New">
+                                </telerik:RadGroupHeader>
+                                <UCs:HeaderUC
+                                    x:Name="NewScene"
+                                    TextProperty="New Scene"
+                                    ToolTip="Clear Render Surface"
+                                    Foreground="White"
+                                    MouseLeftButtonDown="OnMouseLeftButtonDown">
+                                </UCs:HeaderUC>
+                                <UCs:HeaderUC
+                                    x:Name="NewProject"
+                                    TextProperty="New Project"
+                                    ToolTip="Remove All Contents"
+                                    Foreground="White"
+                                    MouseLeftButtonDown="OnMouseLeftButtonDown">
+                                </UCs:HeaderUC>
+                            </StackPanel>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>
+                    <telerik:RadRibbonSplitButton
+                        Text="Open"
+                        LargeImage="{StaticResource Base}">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <StackPanel 
+                                HorizontalAlignment="Stretch">
+                                <telerik:RadGroupHeader
+                                    Content="Open">
+                                </telerik:RadGroupHeader>
+                                <UCs:HeaderUC
+                                    x:Name="OpenScene"
+                                    TextProperty="Open Scene"
+                                    ToolTip="Open Specific Scene"
+                                    Foreground="White"
+                                    MouseLeftButtonDown="OnMouseLeftButtonDown">
+                                </UCs:HeaderUC>
+                                <UCs:HeaderUC
+                                    x:Name="MergeScene"
+                                    TextProperty="Merge Scene"
+                                    ToolTip="Merge specific scene with current scene"
+                                    Foreground="White"
+                                    MouseLeftButtonDown="OnMouseLeftButtonDown">
+                                </UCs:HeaderUC>
+                                <UCs:HeaderUC
+                                    x:Name="OpenProject"
+                                    TextProperty="Open Project"
+                                    ToolTip="Open Specific Project"
+                                    Foreground="White"
+                                    MouseLeftButtonDown="OnMouseLeftButtonDown">
+                                </UCs:HeaderUC>
+                            </StackPanel>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>
+                    <telerik:Separator 
+                        BorderBrush="Cyan" 
+                        BorderThickness="1">
+                    </telerik:Separator>
+                    <telerik:RadRibbonButton
+                        x:Name="SaveScene"
+                        Text="Save Scene" 
+                        ToolTip="Save current scene"
+                        LargeImage="{StaticResource Base}"
+                        Click="AppBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton
+                        x:Name="SaveAsScene"
+                        Text="Save Scene as" 
+                        ToolTip="Save current scene as"
+                        LargeImage="{StaticResource Base}"
+                        Click="AppBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:Separator 
+                        BorderBrush="Cyan" 
+                        BorderThickness="1">
+                    </telerik:Separator>
+                    <telerik:RadRibbonButton
+                        x:Name="SaveProject"
+                        Text="Save project" 
+                        ToolTip="Save current project"
+                        LargeImage="{StaticResource Base}"
+                        Click="AppBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton
+                        x:Name="SaveAsProject"
+                        Text="Save project as" 
+                        ToolTip="Save specific project as"
+                        LargeImage="{StaticResource Base}"
+                        Click="AppBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:Separator 
+                        BorderBrush="Cyan" 
+                        BorderThickness="1">
+                    </telerik:Separator>
+                    <telerik:RadRibbonButton x:Name="Import"
+                        Text="Import" 
+                        LargeImage="{StaticResource Base}"
+                        Click="AppBtn_Click">
+                    </telerik:RadRibbonButton>                   
+                    <telerik:RadRibbonButton 
+                        Text="Export" 
+                        LargeImage="{StaticResource Base}">
+                    </telerik:RadRibbonButton>
+                    <telerik:Separator 
+                        BorderBrush="Cyan" 
+                        BorderThickness="1">
+                    </telerik:Separator>
+                    <telerik:RadRibbonSplitButton
+                        Text="Recent Projects" 
+                        LargeImage="{StaticResource Base}">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <StackPanel
+                                Width="300">
+                                <telerik:RadGroupHeader 
+                                    Content="Recent Projects">
+                                </telerik:RadGroupHeader>
+                                <telerik:RadRibbonButton 
+                                    Content="1 The Land.PES" 
+                                    HorizontalAlignment="Stretch">
+                                </telerik:RadRibbonButton>
+                                <telerik:RadRibbonButton 
+                                    Content="2 AncientFight.PES" 
+                                    HorizontalAlignment="Stretch">
+                                </telerik:RadRibbonButton>
+                                <telerik:RadRibbonButton 
+                                    Content="3 Test.PES" 
+                                    HorizontalAlignment="Stretch">
+                                </telerik:RadRibbonButton>
+                            </StackPanel>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>                   
+                    <telerik:RadRibbonSplitButton
+                        Text="Recent Scenes" 
+                        LargeImage="{StaticResource Base}">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <StackPanel
+                                Width="300">
+                                <telerik:RadGroupHeader 
+                                    Content="Recent Projects">
+                                </telerik:RadGroupHeader>
+                                <telerik:RadRibbonButton 
+                                    Content="1 The Land.PES" 
+                                    HorizontalAlignment="Stretch">
+                                </telerik:RadRibbonButton>
+                                <telerik:RadRibbonButton 
+                                    Content="2 AncientFight.PES" 
+                                    HorizontalAlignment="Stretch">
+                                </telerik:RadRibbonButton>
+                                <telerik:RadRibbonButton 
+                                    Content="3 Test.PES" 
+                                    HorizontalAlignment="Stretch">
+                                </telerik:RadRibbonButton>
+                            </StackPanel>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>
+                    <telerik:Separator 
+                        BorderBrush="Cyan" 
+                        BorderThickness="1">
+                    </telerik:Separator>
+                    <telerik:RadRibbonButton 
+                        Text="Prefrences" 
+                        LargeImage="{StaticResource Base}">
+                    </telerik:RadRibbonButton>
+                    <telerik:Separator 
+                        BorderBrush="Cyan" 
+                        BorderThickness="1">
+                    </telerik:Separator>
+                    <telerik:RadRibbonSplitButton
+                        Text="About" 
+                        LargeImage="{StaticResource Base}">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <StackPanel 
+                                HorizontalAlignment="Stretch">
+                                <telerik:RadGroupHeader 
+                                    Content="About">
+                                </telerik:RadGroupHeader>
+                                <telerik:RadRibbonButton 
+                                    Margin="1,0,2,0" 
+                                    Width="242">
+                                    <StackPanel 
+                                        Orientation="Horizontal" 
+                                        Margin="3,0,5,0">
+                                            <TextBlock Text="Print " FontWeight="Bold" />
+                                            <TextBlock TextWrapping="Wrap" Width="180"
+                                                    Text="Select a printer, number of copies before printing." />
+                                        </StackPanel>
+                                </telerik:RadRibbonButton>
+                            </StackPanel>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>                   
+                </telerik:ApplicationMenu>
+            </telerik:RadRibbonBar.ApplicationMenu>
+
+            <!--Quick Access Toolbar-->
+            <telerik:RadRibbonBar.QuickAccessToolBar>
+                <telerik:QuickAccessToolBar 
+                    Height="35">
+                    <telerik:RadRibbonButton 
+                        ToolTip="Undo" 
+                        SmallImage="{StaticResource Base}" 
+                        Size="Large">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton 
+                        ToolTip="Redo" 
+                        SmallImage="{StaticResource Base}" 
+                        Size="Large">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton 
+                        ToolTip="Show History" 
+                        SmallImage="{StaticResource Base}" 
+                        Size="Large">
+                    </telerik:RadRibbonButton>
+                </telerik:QuickAccessToolBar>
+            </telerik:RadRibbonBar.QuickAccessToolBar>
+
+            <telerik:RadRibbonTab Header="Home">
+                <telerik:RadRibbonGroup 
+                    Header="Selection">
+                    <telerik:RadRibbonButton x:Name="Explorer"
+                        Text="Explorer" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Show explorer window"
+                        Click="HomeTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonSplitButton 
+                        Text="Select" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        telerik:ScreenTip.Title="Selection"
+                        telerik:ScreenTip.Description="Selecting object">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <StackPanel>
+                                <telerik:RadGroupHeader Content="Selection options"></telerik:RadGroupHeader>
+                                <telerik:RadContextMenu 
+                                    BorderThickness="1">
+                                    <telerik:RadMenuItem x:Name="SelectAll"
+                                        Header="Select all"
+                                        ToolTip="Select all object of scene (Ctrl + A)"
+                                        Click="HomeTabBtn_Click">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem x:Name="InvertSelection"
+                                        Header="Invert selection"
+                                        ToolTip="Invert selection (I)"
+                                        Click="HomeTabBtn_Click">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem x:Name="Delete"
+                                        Header="Delete" 
+                                        ToolTip="Delete selected object(s) (Del)"                   
+                                        Click="HomeTabBtn_Click">
+                                    </telerik:RadMenuItem>
+                                </telerik:RadContextMenu>
+                            </StackPanel>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup 
+                    Header="Edit">
+                    <telerik:RadRibbonButton
+                        Text="Translate" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Translate Tool (V)"
+                        Click="HomeTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton 
+                        Text="Rotate" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Rotate Tool (C)"
+                        Click="HomeTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton 
+                        Text="Scale" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large"
+                        ToolTip="Scale Tool (X)"
+                        Click="HomeTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonSplitButton 
+                        Text="Transform" 
+                        SmallImage="{StaticResource Base}" 
+                        Size="Large" 
+                        telerik:ScreenTip.Description="Transforming Options">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <Comps:TransformUC></Comps:TransformUC>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>
+                    <telerik:RadRibbonButton x:Name="Duplicate"
+                        Text="Duplicate" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Duplicate Tool (V)"
+                        Click="HomeTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonSplitButton 
+                        Text="BoundingBox" 
+                        SmallImage="{StaticResource Base}" 
+                        Size="Large" 
+                        telerik:ScreenTip.Description="BoundingBox Options">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <StackPanel>
+                                <telerik:RadGroupHeader Content="Selection options"></telerik:RadGroupHeader>
+                                <telerik:RadContextMenu 
+                                    BorderThickness="1">
+                                    <telerik:RadMenuItem x:Name="ShowAllBoundingBoxes"
+                                        Header="Show all"
+                                        ToolTip="Show all bounding boxes"
+                                        Click="HomeTabBtn_Click">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem x:Name="HideAllBoundingBoxes"
+                                        Header="Hide all"
+                                        ToolTip="Hide all bounding boxes"
+                                        Click="HomeTabBtn_Click">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem x:Name="ResetBoundingBox"
+                                        Header="Reset"
+                                        ToolTip="Reset bounding box"
+                                        Click="HomeTabBtn_Click">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem x:Name="SetMaxBoundingBox"
+                                        Header="Identity"
+                                        ToolTip="Set identity value for bounding box"
+                                        Click="HomeTabBtn_Click">
+                                    </telerik:RadMenuItem>
+                                </telerik:RadContextMenu>
+                            </StackPanel>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup 
+                    Header="Settings">
+                    <telerik:RadRibbonSplitButton
+                        Text="Camera" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        telerik:ScreenTip.Description="Edit camera's performance in render surface">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <Comps:CameraSettingUC x:Name="CameraSetting"></Comps:CameraSettingUC>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>
+                    <telerik:RadRibbonSplitButton
+                        Text="Bind to" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        telerik:ScreenTip.Description="Pick Object for binding">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <StackPanel>
+                                <Border 
+                                    Margin="5"
+                                    BorderBrush="Cyan">
+                                    <StackPanel>
+                                        <CheckBox x:Name="BindToObjectChkBox"
+                                            Content="Bind to Object" 
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center"
+                                            Foreground="White"  
+                                            IsChecked="True"
+                                            Checked="OnChecked"
+                                            Tag="0">
+                                        </CheckBox>
+                                        <Separator></Separator>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock 
+                                                Grid.Column="0"
+                                                Margin="2"
+                                                Text="Property"
+                                                Foreground="White">
+                                            </TextBlock>
+                                            <TextBox x:Name="BindProperty"
+                                                Grid.Column="1"
+                                                Margin="2"
+                                                Text="Position"
+                                                Width="100"
+                                                Height="25"
+                                                ToolTip="Specify the property of binding">
+                                            </TextBox>
+                                        </Grid>
+                                    </StackPanel>
+                                </Border>
+                                <Border 
+                                    Margin="5"
+                                    BorderBrush="Cyan">
+                                    <StackPanel>
+                                        <CheckBox x:Name="BindToBoneChkBox"
+                                            Content="Bind to Bone" 
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center"
+                                            Foreground="White"  
+                                            IsChecked="False"
+                                            Checked="OnChecked"
+                                            Tag="1">
+                                        </CheckBox>
+                                        <Separator></Separator>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock 
+                                                Grid.Column="0"
+                                                Margin="2"
+                                                Text="Bone Name"
+                                                Foreground="White">
+                                            </TextBlock>
+                                            <TextBox x:Name="BoneName"
+                                                Grid.Column="1"
+                                                Margin="2"
+                                                Text="RHand1"
+                                                Width="100"
+                                                Height="25"
+                                                ToolTip="Specify the name of bone">
+                                            </TextBox>
+                                        </Grid>
+                                    </StackPanel>
+                                </Border>
+                                <StackPanel
+                                    HorizontalAlignment="Center"
+                                    Orientation="Horizontal">
+                                    <telerik:RadRibbonButton x:Name="PickSourceObjectForBind"
+                                        Text="Pick from"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        SmallImage="{StaticResource Base}"
+                                        Size="Large"
+                                        ToolTip="Pick the source object"
+                                        Click="HomeTabBtn_Click">
+                                    </telerik:RadRibbonButton>
+                                    <telerik:RadRibbonButton x:Name="PickToBindObject"
+                                        Text="Bind to"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        SmallImage="{StaticResource Base}"
+                                        Size="Large"
+                                        ToolTip="Select object to bind it"
+                                        Click="HomeTabBtn_Click">
+                                    </telerik:RadRibbonButton>                                    
+                                    <telerik:RadRibbonButton x:Name="RemoveBind"
+                                        Text="Remove bind"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        SmallImage="{StaticResource Base}"
+                                        Size="Large"
+                                        ToolTip="Remove binding"
+                                        Click="HomeTabBtn_Click">
+                                    </telerik:RadRibbonButton>
+                                    <telerik:RadRibbonButton x:Name="ApplyBindChanges"
+                                        Text="Apply change"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        SmallImage="{StaticResource Base}"
+                                        Size="Large"
+                                        ToolTip="Apply change to binding"
+                                        Click="ApplyBindChangesBtn_Click">
+                                    </telerik:RadRibbonButton>
+                                </StackPanel>                                
+                            </StackPanel>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>
+                </telerik:RadRibbonGroup>
+            </telerik:RadRibbonTab>
+
+            <telerik:RadRibbonTab Header="Animation">
+                <telerik:RadRibbonGroup
+                    Header="Animation Editor">
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <StackPanel>
+                            <TextBlock
+                                Grid.Row="1"
+                                Text="Show Bone"
+                                Style="{StaticResource ThisStyle}">
+                            </TextBlock>
+                            <telerik:RadComboBox x:Name="ShowBone"
+                                Grid.Row="2"
+                                SelectionChanged="ShowBone_SelectionChanged"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment ="Left"
+                                Margin="5,1"
+                                Width="50">
+                                <telerik:RadComboBoxItem Content="False"></telerik:RadComboBoxItem>
+                                <telerik:RadComboBoxItem Content="True"></telerik:RadComboBoxItem>
+                            </telerik:RadComboBox>
+                        </StackPanel>
+                    </StackPanel>
+                    <telerik:RadRibbonSplitButton 
+                        Text="Swap Bones" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        telerik:ScreenTip.Title="Swap Bones Values"
+                        telerik:ScreenTip.Description="Swap Bones">
+                        <telerik:RadRibbonSplitButton.DropDownContent>
+                            <StackPanel>
+                                <telerik:RadGroupHeader Content="Selection options"></telerik:RadGroupHeader>
+                                <telerik:RadContextMenu 
+                                    BorderThickness="1">
+                                    <telerik:RadMenuItem x:Name="SwapBones"
+                                        Header="All Transforms" 
+                                        ToolTip="Swap all transforms of two bones"
+                                        Click="AnimationTabBtn_Click">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem x:Name="RemoveSwapped"
+                                        Header="Remove All" 
+                                        ToolTip="Remove all swapped bones of selected mesh"
+                                        Click="AnimationTabBtn_Click">
+                                    </telerik:RadMenuItem>
+                                </telerik:RadContextMenu>
+                            </StackPanel>
+                        </telerik:RadRibbonSplitButton.DropDownContent>
+                    </telerik:RadRibbonSplitButton>
+                    <telerik:RadRibbonButton x:Name="DefaultPose"
+                        Text="Default Pose" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="All skinned models play animations"
+                        Click="AnimationDoubleButton_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="ShowAllBones"
+                        Text="Show All Bones"
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Build physic for selected object (V)"
+                        Click="AnimationTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="HiddenAllBones"
+                        Text="Hidden All Bones" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Build physic for selected object (V)"
+                        Click="AnimationTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="SyncGamePad"
+                            Text="Sync GamePad" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Merge with gamePad"
+                            Click="SyncGamePad_Click">
+                    </telerik:RadRibbonButton>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup
+                    Header="Animation Player">
+                    <StackPanel Orientation="Horizontal">
+                        <telerik:RadRibbonButton x:Name="PlayAnimation"
+                            Text="Play" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Play"
+                            Click="AnimationTabBtn_Click">
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton x:Name="PauseAnimation"
+                            Text="Pause" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Pause"
+                            Click="AnimationTabBtn_Click">
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton x:Name="StopAnimation"
+                            Text="Stop" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Stop"
+                            Click="AnimationTabBtn_Click">
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton x:Name="PlayNextFrame"
+                            Text="Next" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Next Frame"
+                            Click="AnimationTabBtn_Click">
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton x:Name="PlayPreviousFrame"
+                            Text="Previous" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Previous Frame"                   
+                            Click="AnimationTabBtn_Click">
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton x:Name="PlayInverse"
+                            Text="Inverse" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Inverse"
+                            Click="AnimationTabBtn_Click">
+                        </telerik:RadRibbonButton>
+                        <Grid
+                            Margin="5"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <TextBlock x:Name="CurrentAnimationFrame"
+                                Grid.Row="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                ToolTip="Current animation Frame"
+                                FontWeight="Bold"
+                                FontSize="12"
+                                Foreground="White"
+                                Text="NaN">
+                            </TextBlock>
+                            <TextBlock
+                                Grid.Row="1"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                Text="Animation time"
+                                Margin="0,12,0,5"
+                                FontSize="11">
+                            </TextBlock>
+                        </Grid>
+                    </StackPanel>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup
+                    Header="Animation Mixer">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Text="Source Clips"
+                            Style="{StaticResource ThisStyle}">
+                        </TextBlock>
+                        <telerik:RadComboBox x:Name="SourceClips"
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            Width="100"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment ="Left"
+                            Margin="5,1"
+                            SelectionChanged="SourceClips_SelectionChanged">
+                        </telerik:RadComboBox>
+                        <TextBlock
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Text="Inherient Tracks"
+                            Style="{StaticResource ThisStyle}">
+                        </TextBlock>
+                        <telerik:RadComboBox x:Name="InherientTracks"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            Width="100"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment ="Left"
+                            Margin="5,1">
+                        </telerik:RadComboBox>
+                    </Grid>
+                    <telerik:RadRibbonButton x:Name="OpenMixer"
+                        Text="Open Mixer" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Build All objects"
+                        Click="OnOpenMixerClicked">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="ApplyInherit"
+                        Text="Apply Changes" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Apply Changes"
+                        Click="ApplyInherit_Click">
+                    </telerik:RadRibbonButton>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup
+                    Header="CutScenes">
+                    <StackPanel Orientation="Horizontal">
+                        <telerik:RadRibbonButton x:Name="PlayCutScene"
+                            Text="Play" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Play the cutScene"
+                            Click="AnimationCutScene_Click">
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton x:Name="PauseCutScene"
+                            Text="Pause" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Pause the current cutScene"                            
+                            Click="AnimationCutScene_Click">
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton x:Name="StopCutScene"
+                            Text="Stop" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Stop the current CutScene"                            
+                            Click="AnimationCutScene_Click">
+                        </telerik:RadRibbonButton>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Text="Cut Scenes"
+                                Style="{StaticResource ThisStyle}">
+                            </TextBlock>
+                            <telerik:RadComboBox x:Name="CutScenes"
+                                Grid.Column="1"
+                                Grid.Row="0"
+                                Width="100"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment ="Left"
+                                Margin="5,1">
+                            </telerik:RadComboBox>
+                            <TextBlock
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Text="Animated Camera"
+                                Style="{StaticResource ThisStyle}">
+                            </TextBlock>
+                            <telerik:RadComboBox x:Name="AnimatedCameras"
+                                Grid.Column="1"
+                                Grid.Row="1"
+                                Width="100"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment ="Left"
+                                Margin="5,1">
+                            </telerik:RadComboBox>
+                        </Grid>
+                        <telerik:RadRibbonButton x:Name="CreateCutScene"
+                            Text="Create" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Create a new cutScene"
+                            Click="AnimationTabBtn_Click">
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton x:Name="AddRemoveToCurrentCutScene"
+                            Text="Add Animation" 
+                            SmallImage="{StaticResource Base}"
+                            Size="Large" 
+                            ToolTip="Add/remove current animation to/from the current cutScene"
+                            Click="AnimationCutScene_Click">
+                        </telerik:RadRibbonButton>
+                    </StackPanel>
+                </telerik:RadRibbonGroup>
+            </telerik:RadRibbonTab>
+            
+            <telerik:RadRibbonTab Header="Build">
+                <telerik:RadRibbonGroup 
+                    Header="Lights and Shadows">
+                    <telerik:RadRibbonButton x:Name="AddLight"
+                        Text="Add Light" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Build new light"
+                        Click="BuildTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="RemoveLight"
+                        Text="Remove Light" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Remove selected light"
+                        Click="BuildTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="Shadows"
+                        Text="Enable/Disable Shadows" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Enable/Disable Shadows"
+                        Click="BuildTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <StackPanel 
+                        VerticalAlignment="Center">
+                        <TextBlock>Shadow Resolution</TextBlock>
+                        <telerik:RadComboBox x:Name="ShadowsResolution"
+                            Text="Shadows Resolution" 
+                            ToolTip="Shadows Resolution"
+                            Width="100"
+                            Height="25"
+                            SelectionChanged="OnChangeShadowsResolution">
+                            <telerik:RadComboBoxItem IsSelected="False">256</telerik:RadComboBoxItem>
+                            <telerik:RadComboBoxItem IsSelected="True">512</telerik:RadComboBoxItem>
+                            <telerik:RadComboBoxItem IsSelected="False">1024</telerik:RadComboBoxItem>
+                        </telerik:RadComboBox>
+                    </StackPanel>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup 
+                    Header="Particles">
+                    <telerik:RadRibbonButton x:Name="AddParticleSyS"
+                        Text="Add ParticleSyS" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Build new particle system"
+                        Click="BuildTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="RemoveParticleSyS"
+                        Text="Remove ParticleSyS" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Remove selected particle system"
+                        Click="BuildTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="LoadTextureParticleSyS"
+                        Text="Load ParticleTexture" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Load texture for the particle"
+                        Click="BuildTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup 
+                    Header="PostProcess">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <Grid
+                        Grid.Column="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <telerik:RadComboBox x:Name="ChangePostProcess"
+                                Grid.Row="0"
+                                Text="Change type of PostProcess"
+                                Width="100"
+                                Height="25"
+                                ToolTip="Change type of PostProcess"
+                                SelectionChanged="OnChangePostProcess">
+                                <telerik:RadComboBoxItem IsSelected="True">Disable</telerik:RadComboBoxItem>
+                                <telerik:RadComboBoxItem IsSelected="False">GodRay</telerik:RadComboBoxItem>
+                                <telerik:RadComboBoxItem IsSelected="False">Toon</telerik:RadComboBoxItem>
+                                <telerik:RadComboBoxItem IsSelected="False">Bloom</telerik:RadComboBoxItem>
+                                <telerik:RadComboBoxItem IsSelected="False">Blur</telerik:RadComboBoxItem>
+                                <telerik:RadComboBoxItem IsSelected="False">Glow</telerik:RadComboBoxItem>
+                            </telerik:RadComboBox>
+                            <telerik:RadButton
+                                Grid.Row="1"
+                                Width="70"
+                                Height="25"
+                                Content="Add to list"
+                                Click="OnAddToPostProcessList">
+                            </telerik:RadButton>
+                        </Grid>
+                    </Grid>
+                    <Grid
+                        Grid.Column="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <ListBox x:Name="PostProcessList"
+                                VerticalAlignment="Top"
+                                Height="37"
+                                ToolTip="Represents list of all post process you can Add/Remove postprocess or reOrder them">
+                            </ListBox>
+                            <StackPanel Grid.Row="1"
+                                Orientation="Horizontal">
+                                <telerik:RadButton
+                                    Width="70"
+                                    Height="25"
+                                    Content="Remove"
+                                    Margin="3"
+                                    Click="OnRemoveOrderPost"
+                                    Tag="0">
+                                </telerik:RadButton>
+                                <telerik:RadButton
+                                    Width="70"
+                                    Height="25"
+                                    Content="Move Up"
+                                    Margin="3"
+                                    Click="OnRemoveOrderPost"
+                                    Tag="1">
+                                </telerik:RadButton>
+                                <telerik:RadButton
+                                    Width="70"
+                                    Height="25"
+                                    Content="Move Down"
+                                    Click="OnRemoveOrderPost"
+                                    Margin="3"
+                                    Tag="2">
+                                </telerik:RadButton>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup>
+                    <telerik:RadRibbonButton 
+                        x:Name="PlayScene"
+                        Text="Play" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Play scene from editor"
+                        Click="BuildTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton
+                        Text="Build All" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Build All objects"
+                        Click="BuildTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton
+                        Text="Cancel" 
+                        SmallImage="{StaticResource Base}"
+                        Size="Large" 
+                        ToolTip="Cancel building operation"
+                        Click="BuildTabBtn_Click">
+                    </telerik:RadRibbonButton>
+                </telerik:RadRibbonGroup>
+            </telerik:RadRibbonTab>           
+            
+        </telerik:RadRibbonBar>
+        <StackPanel
+            Orientation="Horizontal"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right">
+            <telerik:RadButton x:Name="Minimize"
+                Margin="5"
+                Width="40"
+                Height="20"
+                Foreground="Red"
+                FontWeight="Bold"
+                BorderBrush="Cyan"
+                BorderThickness="1"
+                CornerRadius="10"
+                Content="-"
+                ToolTip="Minimize"
+                Click="AppBtn_Click">
+            </telerik:RadButton>
+            <telerik:RadButton x:Name="ExitShortcut"
+                Margin="5"
+                Width="40"
+                Height="20"
+                Content="X"
+                Foreground="Red"
+                FontWeight="Bold"
+                BorderBrush="Cyan"
+                BorderThickness="1"
+                CornerRadius="10"
+                ToolTip="Close"
+                Click="AppBtn_Click">
+            </telerik:RadButton>
+        </StackPanel>
+    </Grid>
+</UserControl>
