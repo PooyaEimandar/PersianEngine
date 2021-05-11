@@ -1,0 +1,16 @@
+﻿<Base:BaseWin 
+    x:Class="PersianEditor.Windows.GamePadSyncerWin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Base="clr-namespace:PersianEditor.Windows"
+    xmlns:UCs="clr-namespace:PersianEditor.UserControls"
+    Width="800"
+    Height="500"
+    KeyDown="OnKeyDownPressed">
+    <Base:BaseWin.RootGrid>
+        <UCs:GamePadSyncerUC x:Name="Ctrl"
+            Width="800"
+            Height="500">
+        </UCs:GamePadSyncerUC>
+    </Base:BaseWin.RootGrid>
+</Base:BaseWin>

@@ -1,0 +1,236 @@
+﻿<UserControl 
+    x:Class="PersianEditor.UserControls.GamePadSyncerUC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:UCs="clr-namespace:PersianEditor.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    mc:Ignorable="d"
+    d:DesignWidth="800"
+    d:DesignHeight="500">
+
+    <UserControl.Resources>
+        <Storyboard x:Key="Animation"
+            AutoReverse="False">
+            <DoubleAnimation
+                Storyboard.TargetName="Lighter"
+                Storyboard.TargetProperty="Radius"
+                From="15"
+                To="150"
+                Duration="0:0:1">
+            </DoubleAnimation>
+            <DoubleAnimation
+                Storyboard.TargetName="BorderLighting"
+                Storyboard.TargetProperty="Opacity"
+                From="0.7"
+                To="0"
+                Duration="0:0:1">
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="ShowKeyAnimation"
+            AutoReverse="False">
+            <DoubleAnimation
+                Storyboard.TargetName="KeyboardPic"
+                Storyboard.TargetProperty="Opacity"
+                From="0"
+                To="1"
+                Duration="0:0:1">
+            </DoubleAnimation>
+            <DoubleAnimation
+                Storyboard.TargetName="XBoxPic"
+                Storyboard.TargetProperty="Opacity"
+                From="1"
+                To="0"
+                Duration="0:0:1">
+            </DoubleAnimation>
+            <DoubleAnimation
+                Storyboard.TargetName="XBoxLights"
+                Storyboard.TargetProperty="Opacity"
+                From="1"
+                To="0"
+                Duration="0:0:1">
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="ShowXBoxAnimation"
+            AutoReverse="False">
+            <DoubleAnimation
+                Storyboard.TargetName="KeyboardPic"
+                Storyboard.TargetProperty="Opacity"
+                From="1"
+                To="0"
+                Duration="0:0:1">
+            </DoubleAnimation>
+            <DoubleAnimation
+                Storyboard.TargetName="XBoxPic"
+                Storyboard.TargetProperty="Opacity"
+                From="0"
+                To="1"
+                Duration="0:0:1">
+            </DoubleAnimation>
+            <DoubleAnimation
+                Storyboard.TargetName="XBoxLights"
+                Storyboard.TargetProperty="Opacity"
+                From="0"
+                To="1"
+                Duration="0:0:1">
+            </DoubleAnimation>
+        </Storyboard>
+    </UserControl.Resources> 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid
+            Grid.Row="0">
+            <Image x:Name="KeyboardPic"
+                Source="/PersianEditor;component/Resources/Images/Keyboard.jpg"
+                Stretch="Uniform"
+                Margin="1">
+            </Image>
+            <Border
+                x:Name="BorderLighting"
+                BorderBrush="Cyan"
+                Width="30"
+                Height="30"
+                CornerRadius="5"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Background="Cyan"
+                Margin="110,-4,0,0"
+                Opacity="0">
+                <Border.Effect>
+                    <BlurEffect x:Name="Lighter" Radius="15"></BlurEffect>
+                </Border.Effect>
+            </Border>
+            <Image x:Name="XBoxPic"
+                Source="/PersianEditor;component/Resources/Images/XBox.png"
+                Stretch="Uniform"
+                Margin="1"
+                Opacity="0">
+            </Image>
+            <Grid x:Name="XBoxLights"
+                Opacity="0">
+                <UCs:CtrlUC x:Name="LeftCtrl"
+                    Width="45"
+                    Height="45"
+                    Margin="-210,-115,0,0"
+                    Tag="0"
+                    OnBorderClicked="LeftCtrlOnClicked">
+                </UCs:CtrlUC>
+                <UCs:CtrlUC x:Name="LeftStick"
+                    LeftColor="Blue"
+                    RightColor="Blue"
+                    TopColor="Blue"
+                    DownColor="Blue"
+                    Width="50"
+                    Height="50"
+                    Margin="-110,12,0,0"
+                    Tag="1"
+                    OnBorderClicked="LeftStickOnClicked">
+                </UCs:CtrlUC>
+                <UCs:CtrlUC x:Name="RightCtrl"
+                    LeftColor="White"
+                    RightColor="White"
+                    TopColor="White"
+                    DownColor="White"
+                    Width="45"
+                    Height="45"
+                    Margin="102,15,0,0"
+                    Tag="2"        
+                    OnBorderClicked="RightCtrlOnClicked">
+                </UCs:CtrlUC>
+                <UCs:CtrlUC x:Name="Buttons"
+                    LeftColor="Blue"
+                    RightColor="Red"
+                    TopColor="Yellow"
+                    DownColor="Lime"
+                    Width="65"
+                    Height="65"
+                    Margin="215,-110,0,0"
+                    Tag="3"        
+                    OnBorderClicked="ButtonsOnClicked">
+                </UCs:CtrlUC>
+            </Grid>
+        </Grid>
+        <Grid
+            Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="115"></RowDefinition>
+                <RowDefinition Height="115"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Select Controller"
+                Foreground="White"
+                Margin="20,5"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+            </TextBlock>
+            <telerik:RadComboBox x:Name="SelectCtrlCombo"
+                Grid.Row="0"
+                Grid.Column="2"
+                Width="150"
+                Height="30"
+                Margin="5"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                HorizontalContentAlignment="Center"
+                SelectionChanged="SelectCtrlCombo_SelectionChanged">
+                <telerik:RadComboBoxItem IsSelected="True">Keybaord</telerik:RadComboBoxItem>
+                <telerik:RadComboBoxItem>XBox</telerik:RadComboBoxItem>
+            </telerik:RadComboBox>
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="4"
+                Text="Select Animation"
+                Foreground="White"
+                Margin="20,5"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+            </TextBlock>
+            <telerik:RadComboBox x:Name="AnimationsCombo"
+                Grid.Row="0"
+                Grid.Column="5"
+                Width="150"
+                Height="30"
+                Margin="5"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                HorizontalContentAlignment="Center">
+            </telerik:RadComboBox>
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="Active by"
+                Foreground="White"
+                Margin="20,5"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+            </TextBlock>
+            <telerik:RadButton x:Name="Controller"
+                Grid.Row="1"
+                Grid.Column="2"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Width="150"
+                Height="30"
+                Foreground="Cyan"
+                ToolTip="tool"
+                ToolTipOpening="Controller_ToolTipOpening"
+                Click="Controller_Click">
+            </telerik:RadButton>
+        </Grid>
+    </Grid>
+</UserControl>
