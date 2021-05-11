@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="PersianSettings.ParticleSet">
+    <BlendState>Additive</BlendState>
+    <TextureName>Textures\Environments\Fire</TextureName>
+	  <Scale>1 1</Scale>
+    <MaxParticles>200</MaxParticles>
+    <Duration>PT2S</Duration>
+    <DurationRandomness>1</DurationRandomness>
+    <EmissionRate>4</EmissionRate>
+    <EmitterVelocitySensitivity>0.1</EmitterVelocitySensitivity>
+    <MinHorizontalVelocity>0</MinHorizontalVelocity>
+    <MaxHorizontalVelocity>0.75</MaxHorizontalVelocity>
+    <MinVerticalVelocity>-0.5</MinVerticalVelocity>
+    <MaxVerticalVelocity>0.5</MaxVerticalVelocity>
+    <Gravity>0 0.5 0</Gravity>
+    <EndVelocity>1</EndVelocity>
+	  <MinColor>205 255 255 255</MinColor>
+	  <MaxColor>255 255 255 255</MaxColor>
+    <MinRotateSpeed>0</MinRotateSpeed>
+    <MaxRotateSpeed>0</MaxRotateSpeed>
+    <MinStartSize>0.5</MinStartSize>
+    <MaxStartSize>1</MaxStartSize>
+    <MinEndSize>1</MinEndSize>
+    <MaxEndSize>3</MaxEndSize>
+    <Intensity>1</Intensity>
+  </Asset>
+</XnaContent>

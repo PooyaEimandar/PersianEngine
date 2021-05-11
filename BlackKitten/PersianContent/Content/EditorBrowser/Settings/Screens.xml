@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="PersianSettings.ScreenInfo[]">
+    <Item>
+      <UpdateState>Screen</UpdateState>
+      <BlendState>NonPremultiplied</BlendState>
+      <Name>IntroVideoScreen</Name>
+      <NextScreenName>IntroDemoScreen</NextScreenName>
+      <WaitBefore>PT5S</WaitBefore>
+      <Duration>PT0S</Duration>
+      <StartWithFading>false</StartWithFading>
+    </Item>
+    <Item>
+      <UpdateState>Both</UpdateState>
+      <BlendState>NonPremultiplied</BlendState>
+      <Name>IntroDemoScreen</Name>
+      <NextScreenName>CalibrationScreen</NextScreenName>
+      <WaitBefore>PT0S</WaitBefore>
+      <Duration>PT0S</Duration>
+      <StartWithFading>true</StartWithFading>
+    </Item>
+    <Item>
+      <UpdateState>Screen</UpdateState>
+      <BlendState>NonPremultiplied</BlendState>
+      <Name>CalibrationScreen</Name>
+      <NextScreenName>MenuScreen</NextScreenName>
+      <WaitBefore>PT0S</WaitBefore>
+      <Duration>PT0S</Duration>
+      <StartWithFading>false</StartWithFading>
+    </Item>
+    <Item>
+      <UpdateState>Both</UpdateState>
+      <BlendState>NonPremultiplied</BlendState>
+      <Name>MenuScreen</Name>
+      <NextScreenName>NULL</NextScreenName>
+      <WaitBefore>PT0S</WaitBefore>
+      <Duration>PT0S</Duration>
+      <StartWithFading>false</StartWithFading>
+    </Item>
+  </Asset>
+</XnaContent>

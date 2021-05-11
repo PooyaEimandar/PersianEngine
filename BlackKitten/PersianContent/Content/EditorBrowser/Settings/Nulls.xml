@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <!-- SkinnedSphere defined in SkinnedMesh -->
+  <Asset Type="SkinnedMeshRuntime.SkinnedSphere[]">
+
+    <!--Face-->
+    <Item>
+      <BoneName>Model_Cap</BoneName>
+      <Radius>7.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_REyebrowMid</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LEyebrowMid</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_eye_left</BoneName>
+      <Radius>4.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_eye_right</BoneName>
+      <Radius>4.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_REyelidUpper</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+	  <Item>
+	    <BoneName>Model_LEyelidUpper</BoneName>
+	    <Radius>1.0</Radius>
+	    <Center>0.0 0.0 0.0</Center>
+	  </Item>
+	  <Item>
+      <BoneName>Model_RNostriBuldge</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LNostriBuldge</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RMouthCorner</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LMouthCorner</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LipUpper</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LipLower</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+	  <Item>
+	    <BoneName>Model_Chin</BoneName>
+	    <Radius>1.0</Radius>
+	    <Center>0.0 0.0 0.0</Center>
+	  </Item>
+    
+    <!-- Head -->
+    <Item>
+      <BoneName>Model_Head1</BoneName>
+      <Radius>4.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_Neck1</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+
+    <!-- Body -->
+    <Item>
+      <BoneName>Model_RShoulder1</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LShoulder1</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_ChestBone1</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_SpineVertebra5</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_SpineVertebra4</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>    
+    <Item>
+      <BoneName>Model_SpineVertebra3</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_SpineStart1</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_UpperBody1</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+
+    <!-- Right Arm -->
+    <Item>
+      <BoneName>Model_RBicep1</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RForearm1</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RHand1</BoneName>
+      <Radius>4.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    
+    <!--Right Fingers-->
+    <Item>
+      <BoneName>Model_RThumb3</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RThumb4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RIndex3</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RIndex4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RMiddle3</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RMiddle4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0 0 0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RRing3</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RRing4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RPinky3</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RPinky4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+
+    <!-- Left Arm -->
+    <Item>
+      <BoneName>Model_LBicep1</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LForearm1</BoneName>
+      <Radius>2.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LHand1</BoneName>
+      <Radius>4.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+
+    <!--Left Fingers-->
+    <Item>
+      <BoneName>Model_LThumb3</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LThumb4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LIndex3</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LIndex4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LMiddle3</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LMiddle4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0 0 0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LRing3</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LRing4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LPinky3</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LPinky4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+
+    <!-- Right Leg -->
+    <Item>
+      <BoneName>Model_RThigh1</BoneName>
+      <Radius>3.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RShin1</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RFootBone4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RFootBone5</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_RFootBone6</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+
+    <!-- Left Leg -->
+    <Item>
+      <BoneName>Model_LThigh1</BoneName>
+      <Radius>3.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LShin1</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LFootBone4</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LFootBone5</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+    <Item>
+      <BoneName>Model_LFootBone6</BoneName>
+      <Radius>1.0</Radius>
+      <Center>0.0 0.0 0.0</Center>
+    </Item>
+  </Asset>
+</XnaContent>
