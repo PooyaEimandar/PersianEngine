@@ -36,5 +36,19 @@ Persian Engine uses DirectX 9 and Microsoft XNA 4 and the Editor of Game Engine 
 * Runtime content pipeline for editor (Integrated with MSBuild and Xna ContentPipeline)
 * Extended math helper 
 
+### The prerequisites are :
+* Visual Studio 2010 or later version
+* DirectX June 2010 SDK - "http://www.microsoft.com/en-us/download/details.aspx?id=6812"
+* Microsoft Kinect SDK 1.7- If you need to use Kinect as input - "http://www.microsoft.com/en-us/download/details.aspx?id=36996"
+* XNA framework 4
+
+### How to compile and run the engine: 
+Open BlackKitten.sln and press F5, also you can use the engine from the
+following path:
+"~\BlackKitten\BlackKitten\PersianEditor\PersianEditor\bin\x86\Debug\PersianEditor.exe"
+
+Contact:
+https://PooyaEimandar.github.io
+
 
 
