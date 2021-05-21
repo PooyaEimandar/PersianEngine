@@ -1,13 +1,12 @@
 Hi there
 Thanks for downloading Persian Engine (CodeName BlackKitten).
 This is a game engine developed by Pooya Eimandar from 
-an indie game studio called "BazaiPardaz" (BaziPardaz.com), in order to 
+an indie game studio called "BazaiPardaz", in order to 
 use on Microsoft Windows Platforms and It is adapted for a range of video game genres. 
 You can use this engine and the source codes at your own risk under the 
-follwoing license "http://persianengine.codeplex.com/license"
+MIT license.
 
-If you find something useful on this project kindly support us, Thank you 
-for your kind and continued support. 
+If you find something useful on this project kindly support us.
 (PayPal ID for donate : Pooya@BaziPardaz.onMicrosoft.com) 
 
 The prerequisites are :
@@ -22,11 +21,8 @@ Open BlackKitten.sln and press F5, also you can use the engine from the
 following path:
 "~\BlackKitten\BlackKitten\PersianEditor\PersianEditor\bin\x86\Debug\PersianEditor.exe"
 
-Kindly follow my next gen game engine on the github.
-"https://github.com/PooyaEimandar/Wolf-Engine"
-
 Contact:
-Pooya-Eimandar.com
+PooyaEimandar.github.io
 Pooya{at}BaziPardaz{dot}Microsoft{dot}Com
 
 
